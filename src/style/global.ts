@@ -12,19 +12,25 @@ const GlobalStyles = createGlobalStyle`
         font-size: 30px;
     }
     h4 {
-        font-size: 24px
+        font-size: 24px;
     }
     h5 {
-        font-size: 20px
+        font-size: 20px;
     }
     p, h6 {
         font-size: 18px;
+    }
+    html {
+        scroll-behavior: smooth;
     }
     body {
         font-family: 'Nunito Sans', sans-serif;
         height: 100%;
         width: 100%;
-        background-color: ${(props) => props.theme.colors.white}
+        background-color: ${(props) => props.theme.colors.primary};
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     li, ol {
         list-style: none;

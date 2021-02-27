@@ -9,22 +9,22 @@ const Header = styled.header`
 const Nav = styled.nav`
   max-width: 1200px;
   padding: 20px;
-  width: 80%;
+  width: 50%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 `
 const Logo = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   cursor: pointer;
 `
 const Link = styled.li`
   width: 150px;
   a {
     width: 100%;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     color: ${(props) => props.theme.colors.dark};
 
@@ -49,7 +49,7 @@ const Navbar: React.FC = (): JSX.Element => {
           </Link>
         </LinkGroup>
         <NextLink href="/">
-          <Logo src="/logo2.png" />
+          <Logo src="/logo.png" />
         </NextLink>
         <LinkGroup>
           <Link style={{ textAlign: 'end' }}>

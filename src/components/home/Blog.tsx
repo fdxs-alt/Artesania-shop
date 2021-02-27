@@ -1,8 +1,6 @@
 import React from 'react'
 
-interface Props {}
-
-const Blog: React.FC<Props> = (): JSX.Element => {
+const Blog: React.FC = (): JSX.Element => {
   return <div>Blog</div>
 }
 

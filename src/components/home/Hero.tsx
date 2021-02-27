@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
   width: 100%;
   padding: 20px;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.primary};
 `
 const Container = styled.div`
   width: 80%;
@@ -34,10 +34,10 @@ const TitleContainer = styled.div`
   button {
     color: white;
     background-color: ${(props) => props.theme.colors.secondary};
-    padding: 18px 24px;
+    padding: 16px 22px;
     border: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
     min-width: 200px;
     text-align: center;
