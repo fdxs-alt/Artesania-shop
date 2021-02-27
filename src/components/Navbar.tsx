@@ -1,32 +1,44 @@
 import React from 'react'
 import styled from 'styled-components'
 import NextLink from 'next/link'
+import { useScrollHeight } from 'shared/useScrollHeight'
+
+interface ILogo {
+  isSmall: boolean
+}
 
 const Header = styled.header`
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: ${(props) => props.theme.colors.primary};
 `
-
-const Nav = styled.nav`
+const Nav = styled.nav<ILogo>`
   max-width: 1200px;
-  padding: 20px;
+  padding: ${(props) => (props.isSmall ? '0px' : '20px')};
   width: 50%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  transition: padding 300ms ease;
 `
-const Logo = styled.img`
-  width: 170px;
-  height: 170px;
+const Logo = styled.img<ILogo>`
+  transform: scale(${(props) => (props.isSmall ? '0.9' : '1.3')});
+  transition: transform 300ms ease;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
 `
-const Link = styled.li`
+const Link = styled.li<ILogo>`
   width: 150px;
   a {
     width: 100%;
-    font-size: 22px;
+    font-size: ${(props) => (props.isSmall ? '18px' : '20px')};
     font-weight: 700;
     color: ${(props) => props.theme.colors.dark};
+    transition: font-size 300ms ease;
 
     &:hover {
       color: ${(props) => props.theme.colors.secondary};
@@ -37,25 +49,26 @@ const LinkGroup = styled.div`
   display: flex;
 `
 const Navbar: React.FC = (): JSX.Element => {
+  const { height } = useScrollHeight()
   return (
     <Header>
-      <Nav>
+      <Nav isSmall={height > 180}>
         <LinkGroup>
-          <Link>
+          <Link isSmall={height > 180}>
             <NextLink href="/">Główna</NextLink>
           </Link>
-          <Link>
+          <Link isSmall={height > 180}>
             <NextLink href="/products">Produkty</NextLink>
           </Link>
         </LinkGroup>
         <NextLink href="/">
-          <Logo src="/logo.png" />
+          <Logo src="/logo.png" isSmall={height > 180} />
         </NextLink>
         <LinkGroup>
-          <Link style={{ textAlign: 'end' }}>
+          <Link style={{ textAlign: 'end' }} isSmall={height > 180}>
             <NextLink href="/blog">Nasz blog</NextLink>
           </Link>
-          <Link style={{ textAlign: 'end' }}>
+          <Link style={{ textAlign: 'end' }} isSmall={height > 180}>
             <NextLink href="/#contact">Kontakt</NextLink>
           </Link>
         </LinkGroup>

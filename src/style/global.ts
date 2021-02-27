@@ -20,17 +20,17 @@ const GlobalStyles = createGlobalStyle`
     p, h6 {
         font-size: 18px;
     }
-    html {
-        scroll-behavior: smooth;
-    }
-    body {
-        font-family: 'Nunito Sans', sans-serif;
-        height: 100%;
-        width: 100%;
-        background-color: ${(props) => props.theme.colors.primary};
+    * {
         box-sizing: border-box;
-        overflow-x: hidden;
-        overflow-y: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body {
+        scroll-behavior: smooth;
+        font-family: 'Raleway', sans-serif;
+        background-color: ${(props) => props.theme.colors.primary};
+
     }
     li, ol {
         list-style: none;

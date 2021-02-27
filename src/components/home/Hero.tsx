@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'style'
 import styled from 'styled-components'
 const Wrapper = styled.section`
   width: 100%;
@@ -30,21 +31,6 @@ const TitleContainer = styled.div`
   h4 {
     margin-top: 30px;
   }
-
-  button {
-    color: white;
-    background-color: ${(props) => props.theme.colors.secondary};
-    padding: 16px 22px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    margin-top: 20px;
-    min-width: 200px;
-    text-align: center;
-    font-weight: 600;
-    cursor: pointer;
-    outline: none;
-  }
 `
 
 const Hero: React.FC = (): JSX.Element => {
@@ -53,7 +39,9 @@ const Hero: React.FC = (): JSX.Element => {
       <Container>
         <TitleContainer>
           <h2>{title}</h2>
-          <button>Sprawdź sam</button>
+          <Button primary type="button">
+            Sprawdź nasze produkty
+          </Button>
         </TitleContainer>
         <Image src="/tree.png" alt="" />
       </Container>
