@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react'
 
 export const useScrollHeight = () => {
-  const [height, setHeight] = useState(window.scrollY)
+  const [height, setHeight] = useState(0)
 
   const handleScroll = useCallback(() => setHeight(window.scrollY), [])
 
