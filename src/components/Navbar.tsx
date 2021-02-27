@@ -10,22 +10,21 @@ interface ILogo {
 const Header = styled.header`
   width: 100%;
   position: sticky;
-  top: 0;
+
   background-color: ${(props) => props.theme.colors.primary};
 `
-const Nav = styled.nav<ILogo>`
+const Nav = styled.nav`
   max-width: 1200px;
-  padding: ${(props) => (props.isSmall ? '0px' : '20px')};
   width: 50%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
+  padding: 10px;
   transition: padding 300ms ease;
 `
 const Logo = styled.img<ILogo>`
-  transform: scale(${(props) => (props.isSmall ? '0.9' : '1.3')});
+  transform: scale(${(props) => (props.isSmall ? '0.9' : '1.2')});
   transition: transform 300ms ease;
   width: 100px;
   height: 100px;
@@ -51,8 +50,8 @@ const LinkGroup = styled.div`
 const Navbar: React.FC = (): JSX.Element => {
   const { height } = useScrollHeight()
   return (
-    <Header>
-      <Nav isSmall={height > 180}>
+    <Header style={{ top: height > 180 ? '0' : '10px' }}>
+      <Nav>
         <LinkGroup>
           <Link isSmall={height > 180}>
             <NextLink href="/">Główna</NextLink>
