@@ -7,10 +7,10 @@ interface ILogo {
   isSmall: boolean
 }
 
-const Header = styled.header`
+const Header = styled.header<ILogo>`
   width: 100%;
   position: sticky;
-
+  top: ${(props) => (props.isSmall ? '0' : '10px')};
   background-color: ${(props) => props.theme.colors.primary};
 `
 const Nav = styled.nav`
@@ -50,7 +50,7 @@ const LinkGroup = styled.div`
 const Navbar: React.FC = (): JSX.Element => {
   const { height } = useScrollHeight()
   return (
-    <Header style={{ top: height > 180 ? '0' : '10px' }}>
+    <Header isSmall={height > 180}>
       <Nav>
         <LinkGroup>
           <Link isSmall={height > 180}>
