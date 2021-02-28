@@ -48,7 +48,7 @@ const Title = styled.h2`
 
 const WrapperText = styled.p`
   max-width: 800px;
-  font-size: 22px;
+  font-size: 18px;
   color: ${(props) => props.theme.colors.primary};
   margin: 0 auto 90px auto;
   text-align: center;
@@ -77,24 +77,21 @@ export default AboutProducts
 
 const icons = [
   {
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in libero ipsum.',
+    text: 'Naturalne kosmetyki do pielęgnacji – domowe SPA.',
     iconPath: '/soap.svg',
     alt: 'soap',
   },
   {
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in libero ipsum.',
+    text: 'Zioła dla zdrowia, urody i dobrego samopoczucia.',
     iconPath: '/bowl.svg',
     alt: 'bowl',
   },
   {
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in libero ipsum.',
+    text: 'Relaks w naturalnym stylu.',
     iconPath: '/herbal-tea.svg',
     alt: 'herbal',
   },
 ]
 
 const paragraphText =
-  'Jesteśmy firmą prozdrowotną. Oferujemy duży wachlarz produktów przygotowanych na bazie naturalnych składników, bez zbędnej chemii.'
+  'Jesteśmy zwykłą rodziną preferującą zdrowy, proekologiczny, ale nie ortodoksyjny styl bycia i życia. Nasza działalność opiera się na subtelnym, wielopłaszczyznowym poradnictwie i oferowaniu szerokiego wachlarza produktów na bazie naturalnych składników, bez zbędnej chemii i na każdą kieszeń. Sprawdź naszą ofertę.'

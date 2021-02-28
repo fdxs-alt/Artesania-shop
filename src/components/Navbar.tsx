@@ -11,7 +11,7 @@ const Header = styled.header<ILogo>`
   width: 100%;
   position: sticky;
   top: ${(props) => (props.isSmall ? '0' : '10px')};
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => `rgba(246, 255, 248, 0.98)`};
 `
 const Nav = styled.nav`
   max-width: 1200px;
@@ -40,7 +40,7 @@ const Link = styled.li<ILogo>`
     transition: font-size 300ms ease;
 
     &:hover {
-      color: ${(props) => props.theme.colors.secondary};
+      color: ${(props) => props.theme.colors.lightGreen};
     }
   }
 `
@@ -61,7 +61,7 @@ const Navbar: React.FC = (): JSX.Element => {
           </Link>
         </LinkGroup>
         <NextLink href="/">
-          <Logo src="/logo.png" isSmall={height > 180} />
+          <Logo src="/logo.png" isSmall={height > 180} loading="lazy" />
         </NextLink>
         <LinkGroup>
           <Link style={{ textAlign: 'end' }} isSmall={height > 180}>

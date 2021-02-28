@@ -81,7 +81,7 @@ const Contact = () => {
             type="text"
             required
             name="name"
-            placeholder="np. kowalski@gmail.com"
+            placeholder="np. nowakj@gmail.com"
           />
         </FormGroup>
         <FormGroup>
