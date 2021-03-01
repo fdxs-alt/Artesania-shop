@@ -11,7 +11,8 @@ const Header = styled.header<ILogo>`
   width: 100%;
   position: sticky;
   top: ${(props) => (props.isSmall ? '0' : '10px')};
-  background-color: ${(props) => `rgba(246, 255, 248, 0.98)`};
+  background-color: rgba(246, 255, 248, 0.98);
+  z-index: 100;
 `
 const Nav = styled.nav`
   max-width: 1200px;
