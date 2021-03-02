@@ -22,6 +22,24 @@ export const PATHS_QUERY = `{
     }
 }`
 
+export const BLOG_QUERY = `{
+  allArticles {
+    slug
+      content
+      date
+      title
+      heading
+      photo {
+        id
+        format
+        responsiveImage {
+          src
+        }
+      }
+      id
+  }
+}`
+
 export const HOME_QUERY = `{
     allArticles(filter: {featured: {eq: "true"}}) {
       slug

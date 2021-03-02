@@ -60,6 +60,11 @@ const Title = styled.h1`
   font-size: 32px !important;
 `
 
+const Data = styled.time`
+  font-size: 18px;
+  font-weight: 500;
+`
+
 interface Props {
   article: Content
 }
@@ -69,6 +74,7 @@ const SinglePost: React.FC<Props> = ({ article }) => {
     <Layout title={`Artesania | ${article.title}`}>
       <PostWrapper>
         <Image src={article.photo.responsiveImage.src} />
+        <Data>Data dodatnia: {article.date}</Data>
         <Title>{article.title}</Title>
         <Markdown content={article.content} />
       </PostWrapper>
