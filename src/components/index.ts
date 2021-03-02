@@ -5,4 +5,14 @@ import Contact from './home/Contact/Contact'
 import Layout from './Layout/Layout'
 import Introduction from './home/Introduction/Introduction'
 import Products from './home/Products/Products'
-export { Layout, AboutProducts, Contact, Blog, Hero, Introduction, Products }
+import Markdown from './Markdown'
+export {
+  Layout,
+  AboutProducts,
+  Contact,
+  Blog,
+  Hero,
+  Introduction,
+  Products,
+  Markdown,
+}
