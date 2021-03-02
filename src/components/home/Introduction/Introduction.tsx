@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.section`
   width: 80%;
-  margin: 0 auto 100px auto;
+  margin: 100px auto 100px auto;
   max-width: 1000px;
 `
 
@@ -37,9 +37,9 @@ const Step = styled.div<IStep>`
   align-items: center;
 
   p {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 `
 
@@ -49,10 +49,11 @@ const ImgContainer = styled.div`
   border-radius: 50%;
   box-sizing: content-box;
   padding: 0.2em;
-  border: 2px solid ${(props) => props.theme.colors.secondary};
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid ${(props) => props.theme.colors.secondary};
+  box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.1);
   img {
     width: 60px;
     height: 60px;
@@ -62,7 +63,7 @@ const ImgContainer = styled.div`
 const Arrow = styled.div`
   position: absolute;
 
-  height: 10px;
+  height: 8px;
   background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 20px;
 `

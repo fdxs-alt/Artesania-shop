@@ -3,7 +3,14 @@ import { GetStaticProps } from 'next'
 import { HOME_QUERY, request } from '@api'
 import React from 'react'
 import { Content } from '../types/types'
-import { Layout, AboutProducts, Blog, Contact, Introduction } from '@components'
+import {
+  Layout,
+  AboutProducts,
+  Blog,
+  Contact,
+  Introduction,
+  Products,
+} from '@components'
 
 interface Props {
   allArticles: Content[]
@@ -12,8 +19,9 @@ const Home: React.FC<Props> = ({ allArticles }): JSX.Element => {
   return (
     <Layout title="Aretesania | Strona główna">
       <Hero />
-      <Introduction />
       <AboutProducts />
+      <Introduction />
+      <Products />
       <Blog allArticles={allArticles} />
       <Contact />
     </Layout>

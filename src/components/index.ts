@@ -4,4 +4,5 @@ import Hero from './home/Hero/Hero'
 import Contact from './home/Contact/Contact'
 import Layout from './Layout/Layout'
 import Introduction from './home/Introduction/Introduction'
-export { Layout, AboutProducts, Contact, Blog, Hero, Introduction }
+import Products from './home/Products/Products'
+export { Layout, AboutProducts, Contact, Blog, Hero, Introduction, Products }
