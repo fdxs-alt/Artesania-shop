@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import Head from 'next/head'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from './Navbar/Navbar'
+import Footer from './Footer/Footer'
 import styled from 'styled-components'
 
 const Main = styled.div``

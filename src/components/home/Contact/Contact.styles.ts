@@ -1,0 +1,64 @@
+import styled from 'styled-components'
+
+export const Wrapper = styled.section`
+  width: 100%;
+  margin: auto;
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+export const Title = styled.h3`
+  color: ${(props) => props.theme.colors.lightGreen};
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  font-weight: 700;
+  text-decoration: underline;
+`
+export const Text = styled.p`
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+`
+
+export const Form = styled.form`
+  width: 40%;
+  min-width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+`
+
+export const FormGroup = styled.div`
+  width: 80%;
+  margin: 10px auto;
+
+  label {
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+
+  textarea,
+  input {
+    width: 100%;
+    border: 2px solid ${(props) => props.theme.colors.blue};
+    padding: 13px;
+    display: block;
+    margin-top: 6px;
+    border-radius: 8px;
+    outline-color: ${(props) => props.theme.colors.secondary};
+    font-family: 'Raleway', serif;
+    &::placeholder {
+      font-family: 'Raleway', serif;
+      font-weight: 500;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+`

@@ -28,6 +28,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths: [...allArticles.map((el) => ({ params: { slug: el.slug } }))],
-    fallback: true,
+    fallback: false,
   }
 }
