@@ -18,7 +18,7 @@ const Footer: React.FC = (): JSX.Element => {
             </Link>
           ))}
           <p>
-            Albo przez formularz wyżej {'  '}
+            Albo przez formularz {'  '}
             <span role="img" aria-label="smily-face">
               😊
             </span>

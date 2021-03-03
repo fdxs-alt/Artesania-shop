@@ -94,6 +94,8 @@ export const Wrapper = styled.div<Open>`
   }
   transition: opacity 600ms ease, transform 400ms ease;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 1000;
   overflow: auto;
   transform: ${(props) =>
@@ -102,9 +104,9 @@ export const Wrapper = styled.div<Open>`
   visibility: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
 `
 export const LinksWrapper = styled.div<Open>`
+  position: absolute;
   width: 80%;
   align-self: center;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +114,7 @@ export const LinksWrapper = styled.div<Open>`
   button {
     outline: none;
     background-color: inherit;
-    margin-top: 55px;
+    margin-top: 30px;
     border: none;
     transition: transform 300ms ease;
     &:hover {
@@ -130,4 +132,12 @@ export const LinksWrapper = styled.div<Open>`
       color: ${(props) => props.theme.colors.lightGreen};
     }
   }
+`
+export const SmallButton = styled.button`
+  outline: none;
+  background-color: inherit;
+  top: 0;
+  border: none;
+  position: absolute;
+  cursor: pointer;
 `
