@@ -33,11 +33,15 @@ export const Text = styled.p`
 `
 
 export const Form = styled.form`
-  width: 50%;
+  width: 40%;
   min-width: 300px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: ${(props) => props.theme.sizes.laptop}) {
+    width: 50%;
+  }
 
   @media (max-width: ${(props) => props.theme.sizes.smLaptop}) {
     width: 60%;
