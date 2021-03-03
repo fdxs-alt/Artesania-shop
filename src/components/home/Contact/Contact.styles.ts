@@ -33,14 +33,18 @@ export const Text = styled.p`
 `
 
 export const Form = styled.form`
-  width: 40%;
+  width: 50%;
   min-width: 300px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
 
-  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+  @media (max-width: ${(props) => props.theme.sizes.smLaptop}) {
     width: 60%;
+  }
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 100%;
   }
 `
 

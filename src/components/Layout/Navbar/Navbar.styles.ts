@@ -30,6 +30,11 @@ export const Logo = styled.img<ILogo>`
   width: 100px;
   height: 100px;
   cursor: pointer;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 90px;
+    height: 90px;
+  }
 `
 export const Link = styled.li<ILogo>`
   width: 150px;
@@ -49,9 +54,27 @@ export const Link = styled.li<ILogo>`
   }
 
   &:hover {
-    transform: scale(0.95);
+    transform: scale(1.05);
   }
 `
 export const LinkGroup = styled.div`
   display: flex;
+`
+
+export const SmallMenu = styled.nav`
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 20px;
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    display: flex;
+  }
+`
+
+export const MenuButton = styled.button`
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: fit-content;
 `
