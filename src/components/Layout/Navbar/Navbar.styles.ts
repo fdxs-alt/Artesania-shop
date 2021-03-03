@@ -20,6 +20,9 @@ export const Nav = styled.nav`
   justify-content: space-evenly;
   padding: 10px;
   transition: padding 300ms ease;
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    display: none;
+  }
 `
 export const Logo = styled.img<ILogo>`
   transform: scale(${(props) => (props.isSmall ? '0.9' : '1.2')});
@@ -32,6 +35,7 @@ export const Link = styled.li<ILogo>`
   width: 150px;
   transition: transform 300ms ease;
   transform-origin: center;
+
   a {
     width: 100%;
     font-size: ${(props) => (props.isSmall ? '18px' : '20px')};

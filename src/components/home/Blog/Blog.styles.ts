@@ -14,6 +14,10 @@ export const Title = styled.h2`
   margin: 0 auto 30px auto;
   font-weight: 700;
   text-decoration: underline;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    font-size: 26px;
+  }
 `
 
 export const FeaturedBlogPosts = styled.div`
@@ -23,6 +27,11 @@ export const FeaturedBlogPosts = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 75px auto 50px auto;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    flex-direction: column;
+    margin: 20px auto 50px auto;
+  }
 `
 
 export const Post = styled.div`
@@ -36,6 +45,17 @@ export const Post = styled.div`
   font-weight: 500;
   position: relative;
   z-index: 1;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 75%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: ${(props) => props.theme.sizes.phone}) {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
   &::before {
     z-index: -1;
     position: absolute;

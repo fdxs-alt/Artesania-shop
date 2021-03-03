@@ -5,6 +5,10 @@ const Wrapper = styled.section`
   width: 80%;
   margin: 100px auto 100px auto;
   max-width: 1000px;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 95%;
+  }
 `
 
 export const Title = styled.h2`
@@ -14,6 +18,10 @@ export const Title = styled.h2`
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    font-size: 26px;
+  }
 `
 
 const Steps = styled.div`
@@ -23,6 +31,10 @@ const Steps = styled.div`
   justify-content: space-between;
   height: 450px;
   text-align: center;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    height: 200px;
+  }
 `
 
 interface IStep {
@@ -36,10 +48,17 @@ const Step = styled.div<IStep>`
   flex-direction: column-reverse;
   align-items: center;
 
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 30%;
+  }
+
   p {
     font-weight: 600;
     font-size: 16px;
     margin-top: 15px;
+    @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+      font-size: 14px;
+    }
   }
 `
 
@@ -54,9 +73,20 @@ const ImgContainer = styled.div`
   justify-content: center;
   border: 3px solid ${(props) => props.theme.colors.secondary};
   box-shadow: 2px 2px 15px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 55px;
+    height: 55px;
+  }
+
   img {
     width: 60px;
     height: 60px;
+
+    @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+      width: 40px;
+      height: 40px;
+    }
   }
 `
 
@@ -66,6 +96,10 @@ const Arrow = styled.div`
   height: 8px;
   background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 20px;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    display: none;
+  }
 `
 
 const Introduction = () => {

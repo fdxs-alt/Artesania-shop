@@ -11,5 +11,12 @@ declare module 'styled-components' {
       lightGreen: string
       blue: string
     }
+    sizes: {
+      smLaptop: string
+      laptop: string
+      desktop: string
+      tablet: string
+      phone: string
+    }
   }
 }

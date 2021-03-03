@@ -4,6 +4,10 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   padding: 60px;
   background-color: ${(props) => props.theme.colors.secondary};
+
+  @media (max-width: ${(props) => props.theme.sizes.phone}) {
+    padding: 30px 15px;
+  }
 `
 
 export const InnerFooter = styled.div`
@@ -15,11 +19,18 @@ export const InnerFooter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${(props) => props.theme.sizes.phone}) {
+    flex-direction: column-reverse;
+  }
 `
 
 export const Logo = styled.img`
   width: 120px;
   align-self: center;
+  @media (max-width: ${(props) => props.theme.sizes.phone}) {
+    margin-bottom: 30px;
+  }
 `
 export const Column = styled.div`
   display: flex;

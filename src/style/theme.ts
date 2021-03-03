@@ -10,6 +10,13 @@ const theme: DefaultTheme = {
     gray: '#363946',
     dark: '#000000',
   },
+  sizes: {
+    smLaptop: '1024px',
+    laptop: '1366px',
+    desktop: '1920px',
+    tablet: '768px',
+    phone: '500px',
+  },
 }
 
 export default theme

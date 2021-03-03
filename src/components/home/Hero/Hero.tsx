@@ -15,7 +15,7 @@ const Hero: React.FC = (): JSX.Element => {
             Sprawdź nasze produkty
           </Button>
         </TitleContainer>
-        <Image src="/tree.png" alt="" />
+        <Image src="/tree.png" alt="tree-logo" />
       </Container>
     </Wrapper>
   )

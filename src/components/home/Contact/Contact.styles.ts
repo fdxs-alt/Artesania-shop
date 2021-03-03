@@ -15,6 +15,10 @@ export const Title = styled.h3`
   margin: 0 auto 30px auto;
   font-weight: 700;
   text-decoration: underline;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    font-size: 26px;
+  }
 `
 export const Text = styled.p`
   max-width: 600px;
@@ -22,6 +26,10 @@ export const Text = styled.p`
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    font-size: 16px;
+  }
 `
 
 export const Form = styled.form`
@@ -30,6 +38,10 @@ export const Form = styled.form`
   margin: 20px auto;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 60%;
+  }
 `
 
 export const FormGroup = styled.div`
