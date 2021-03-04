@@ -43,6 +43,15 @@ const PostWrapper = styled.div`
     text-align: justify;
     line-height: 1.8;
   }
+
+  li {
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 18px;
+    padding: 5px 0;
+    line-height: 1.8;
+    font-weight: 500;
+  }
 `
 
 const Image = styled.img`

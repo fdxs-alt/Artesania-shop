@@ -25,7 +25,7 @@ export const FeaturedBlogPosts = styled.div`
   max-width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 75px auto 50px auto;
 
   @media (max-width: ${(props) => props.theme.sizes.tablet}) {
@@ -40,6 +40,7 @@ export const Post = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
+  margin: 0 10px;
 
   color: ${(props) => props.theme.colors.white};
   font-weight: 500;
