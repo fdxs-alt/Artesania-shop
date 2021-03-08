@@ -22,7 +22,7 @@ const MobileMenu: React.FC<Props> = ({ isOpen, close }) => {
           <NextLink href="/">Główna</NextLink>
         </button>
         <button onClick={() => close()}>
-          <NextLink href="/products">Produkty</NextLink>
+          <NextLink href="/#products">Produkty</NextLink>
         </button>
         <button onClick={() => close()}>
           <NextLink href="/blog">Nasz blog</NextLink>

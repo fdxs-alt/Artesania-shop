@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Product } from 'types/types'
 import Image from 'next/image'
 import Link from 'next/link'
+
 export const Wrapper = styled.section`
   width: 100%;
   padding: 60px;
@@ -36,6 +37,11 @@ const ProductContainer = styled.div`
   div {
     width: 100%;
     border-bottom: 1px solid ${(props) => props.theme.colors.white};
+  }
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    margin-bottom: 30px;
+    width: 90%;
   }
 `
 
@@ -84,6 +90,7 @@ const Products: React.FC<Props> = ({ allProducts }) => {
               height={200}
               src={el.photos[0].responsiveImage.src}
               objectFit="cover"
+              loading="lazy"
             />
             <ContentContainer>
               <h5>{el.title}</h5>

@@ -48,9 +48,13 @@ export const Post = styled.div`
   position: relative;
   z-index: 1;
 
-  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
-    width: 75%;
+  @media (max-width: ${(props) => props.theme.sizes.smLaptop}) {
+    width: 500px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: ${(props) => props.theme.sizes.tablet}) {
+    width: 80%;
   }
 
   @media (max-width: ${(props) => props.theme.sizes.phone}) {
