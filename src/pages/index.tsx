@@ -2,7 +2,7 @@ import Hero from '../components/home/Hero/Hero'
 import { GetStaticProps } from 'next'
 import { HOME_QUERY, request } from '@api'
 import React from 'react'
-import { Content } from '../types/types'
+import { Content, Product } from '../types/types'
 import {
   Layout,
   AboutProducts,
@@ -14,14 +14,15 @@ import {
 
 interface Props {
   allArticles: Content[]
+  allProducts: Product[]
 }
-const Home: React.FC<Props> = ({ allArticles }): JSX.Element => {
+const Home: React.FC<Props> = ({ allArticles, allProducts }): JSX.Element => {
   return (
     <Layout title="Artesania | Strona główna">
       <Hero />
       <AboutProducts />
       <Introduction />
-      <Products />
+      <Products allProducts={allProducts} />
       <Blog allArticles={allArticles} />
       <Contact />
     </Layout>
@@ -31,11 +32,11 @@ const Home: React.FC<Props> = ({ allArticles }): JSX.Element => {
 export default Home
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { allArticles } = await request({
+  const { allArticles, allProducts } = await request({
     query: HOME_QUERY,
   })
 
   return {
-    props: { allArticles },
+    props: { allArticles, allProducts },
   }
 }

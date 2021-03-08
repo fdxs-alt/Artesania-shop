@@ -56,4 +56,16 @@ export const HOME_QUERY = `{
       }
       id
     }
-  }`
+    allProducts {
+      content
+      id
+      link
+      title
+      slug
+      photos {
+        responsiveImage {
+          src
+        }
+      }
+    }
+}`

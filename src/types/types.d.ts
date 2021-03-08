@@ -17,3 +17,11 @@ export interface Content {
   id: string
   heading: string
 }
+export interface Product {
+  content: string
+  id: string
+  link: string
+  title: string
+  photos: Photo[]
+  slug: string
+}
