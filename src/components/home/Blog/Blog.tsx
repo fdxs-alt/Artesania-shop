@@ -37,6 +37,38 @@ const Blog: React.FC<Props> = ({ allArticles }): JSX.Element => {
             </Post>
           </Link>
         ))}
+        {allArticles.map((el) => (
+          <Link href={`/blog/${el.slug}`} key={el.id}>
+            <Post
+              style={{
+                backgroundImage: `url(${el.photo.responsiveImage.src})`,
+              }}
+            >
+              <InnerContent>
+                <h4>{el.title}</h4>
+                <time>{el.date}</time>
+                <p>{el.heading}</p>
+                <small>Kontynuuj czytanie</small>
+              </InnerContent>
+            </Post>
+          </Link>
+        ))}
+        {allArticles.map((el) => (
+          <Link href={`/blog/${el.slug}`} key={el.id}>
+            <Post
+              style={{
+                backgroundImage: `url(${el.photo.responsiveImage.src})`,
+              }}
+            >
+              <InnerContent>
+                <h4>{el.title}</h4>
+                <time>{el.date}</time>
+                <p>{el.heading}</p>
+                <small>Kontynuuj czytanie</small>
+              </InnerContent>
+            </Post>
+          </Link>
+        ))}
       </FeaturedBlogPosts>
       <Button onClick={() => router.push('/blog')}>
         Zainteresowany? Zobacz więcej!

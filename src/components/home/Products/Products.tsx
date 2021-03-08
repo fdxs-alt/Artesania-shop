@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
   h2 {
     margin: auto;
     margin-bottom: 50px;
-    max-width: 800px;
+    max-width: 650px;
     text-align: center;
     font-weight: 600;
   }
@@ -74,7 +74,7 @@ interface Props {
 
 const Products: React.FC<Props> = ({ allProducts }) => {
   return (
-    <Wrapper>
+    <Wrapper id="products">
       <h2>Sprawdź własnoręcznie wytworzone przez nas produkty</h2>
       <ProductsWrapper>
         {allProducts.map((el) => (

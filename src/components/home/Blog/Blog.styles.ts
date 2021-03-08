@@ -22,9 +22,10 @@ export const Title = styled.h2`
 
 export const FeaturedBlogPosts = styled.div`
   width: 80%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 75px auto 50px auto;
 
@@ -35,12 +36,12 @@ export const FeaturedBlogPosts = styled.div`
 `
 
 export const Post = styled.div`
-  width: 30%;
+  width: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
-  margin: 0 10px;
+  height: 275px;
+  margin: 10px;
 
   color: ${(props) => props.theme.colors.white};
   font-weight: 500;

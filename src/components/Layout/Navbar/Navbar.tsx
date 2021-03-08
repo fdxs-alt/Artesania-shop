@@ -26,7 +26,7 @@ const Navbar: React.FC = (): JSX.Element => {
               <NextLink href="/">Główna</NextLink>
             </Link>
             <Link isSmall={height > 180}>
-              <NextLink href="/products">Produkty</NextLink>
+              <NextLink href="/#products">Produkty</NextLink>
             </Link>
           </LinkGroup>
           <NextLink href="/">
