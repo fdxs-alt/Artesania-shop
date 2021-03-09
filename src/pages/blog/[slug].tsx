@@ -80,7 +80,7 @@ interface Props {
 
 const SinglePost: React.FC<Props> = ({ article }) => {
   return (
-    <Layout title={`Artesania | ${article.title}`}>
+    <Layout title={`Artesania | ${article.title}`} url={`blog/${article.slug}`}>
       <PostWrapper>
         <Image src={article.photo.responsiveImage.src} />
         <Data>Data dodatnia: {article.date}</Data>

@@ -69,7 +69,7 @@ const Post = styled.div`
 
 const Blog: React.FC<Props> = ({ allArticles }) => {
   return (
-    <Layout title="Artesania | Blog">
+    <Layout title="Artesania | Blog" url="blog">
       <Wrapper>
         <Title>Blog</Title>
         <PostsContainer>

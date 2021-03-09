@@ -61,7 +61,6 @@ export default class MyDocument extends Document {
             sizes="180x180"
             href="/apple-touch-icon.png"
           />
-          <link rel="manifest" href="manifest.json" />
         </Head>
         <body>
           <Main />

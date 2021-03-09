@@ -18,7 +18,7 @@ interface Props {
 }
 const Home: React.FC<Props> = ({ allArticles, allProducts }): JSX.Element => {
   return (
-    <Layout title="Artesania | Strona główna">
+    <Layout title="Artesania | Strona główna" url="">
       <Hero />
       <AboutProducts />
       <Introduction />
