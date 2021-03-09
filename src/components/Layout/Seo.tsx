@@ -19,13 +19,13 @@ const Seo: React.FC<SeoProps> = ({ title, url }) => {
           'Jesteśmy zwykłą rodziną preferującą zdrowy, proekologiczny, ale nie ortodoksyjny styl bycia i życia. Nasza działalność opiera się na subtelnym, wielopłaszczyznowym poradnictwie i oferowaniu szerokiego wachlarza produktów na bazie naturalnych składników, bez zbędnej chemii i na każdą kieszeń. Sprawdź naszą ofertę!',
         images: [
           {
-            url: '/logo.png',
+            url: 'https://www.datocms-assets.com/42981/1613749478-logo.png',
             width: 800,
             height: 600,
             alt: 'Nasze logo',
           },
           {
-            url: '/logo.png',
+            url: 'https://www.datocms-assets.com/42981/1613749478-logo.png',
             width: 900,
             height: 800,
             alt: 'Nasze logo',
