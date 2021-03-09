@@ -11,12 +11,12 @@ const Seo: React.FC<SeoProps> = ({ title, url }) => {
     <NextSeo
       title={title}
       description="Jesteśmy zwykłą rodziną preferującą zdrowy, proekologiczny, ale nie ortodoksyjny styl bycia i życia. Nasza działalność opiera się na subtelnym, wielopłaszczyznowym poradnictwie i oferowaniu szerokiego wachlarza produktów na bazie naturalnych składników, bez zbędnej chemii i na każdą kieszeń. Sprawdź naszą ofertę!"
-      canonical="https://artesania-shop.vercel.app/"
+      canonical="https://sklep-artesania.pl//"
       facebook={{
         appId: '906189503472261',
       }}
       openGraph={{
-        url: `https://artesania-shop.vercel.app/${url}`,
+        url: `https://sklep-artesania.pl/${url}`,
         title,
         type: 'website',
         description:
