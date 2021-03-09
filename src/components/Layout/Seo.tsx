@@ -12,9 +12,13 @@ const Seo: React.FC<SeoProps> = ({ title, url }) => {
       title={title}
       description="Jesteśmy zwykłą rodziną preferującą zdrowy, proekologiczny, ale nie ortodoksyjny styl bycia i życia. Nasza działalność opiera się na subtelnym, wielopłaszczyznowym poradnictwie i oferowaniu szerokiego wachlarza produktów na bazie naturalnych składników, bez zbędnej chemii i na każdą kieszeń. Sprawdź naszą ofertę!"
       canonical="https://artesania-shop.vercel.app/"
+      facebook={{
+        appId: '906189503472261',
+      }}
       openGraph={{
         url: `https://artesania-shop.vercel.app/${url}`,
         title,
+        type: 'website',
         description:
           'Jesteśmy zwykłą rodziną preferującą zdrowy, proekologiczny, ale nie ortodoksyjny styl bycia i życia. Nasza działalność opiera się na subtelnym, wielopłaszczyznowym poradnictwie i oferowaniu szerokiego wachlarza produktów na bazie naturalnych składników, bez zbędnej chemii i na każdą kieszeń. Sprawdź naszą ofertę!',
         images: [
