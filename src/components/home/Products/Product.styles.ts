@@ -69,6 +69,10 @@ export const ProductContainer = styled.div`
     max-width: unset;
   }
 
+  @media (max-width: ${(props) => props.theme.sizes.phone}) {
+    width: 300px;
+  }
+
   &:hover {
     transform: scale(1.03);
   }
@@ -76,8 +80,11 @@ export const ProductContainer = styled.div`
   img {
     @media (max-width: ${(props) => props.theme.sizes.tablet}) {
       margin-bottom: 30px;
-      width: 400px !important;
       height: 200px !important;
+    }
+
+    @media (max-width: ${(props) => props.theme.sizes.phone}) {
+      width: 300px !important;
     }
   }
 `
