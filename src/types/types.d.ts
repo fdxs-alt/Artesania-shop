@@ -24,4 +24,5 @@ export interface Product {
   title: string
   photos: Photo[]
   slug: string
+  shortDescription: string
 }

@@ -62,6 +62,7 @@ export const HOME_QUERY = `{
       link
       title
       slug
+      shortDescription
       photos {
         responsiveImage {
           src

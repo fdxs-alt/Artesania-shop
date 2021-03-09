@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     p, h6 {
         font-size: 18px;
     }
-    * {
+    *, ::after, ::before {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
