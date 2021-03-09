@@ -61,6 +61,10 @@ export default class MyDocument extends Document {
             sizes="180x180"
             href="/apple-touch-icon.png"
           />
+          <meta
+            name="google-site-verification"
+            content="igczOBKKEWdqsmUrvg8b_NrwKcXPMQrQlOV0SCK9sQw"
+          />
         </Head>
         <body>
           <Main />
