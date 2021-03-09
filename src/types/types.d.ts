@@ -26,3 +26,13 @@ export interface Product {
   slug: string
   shortDescription: string
 }
+
+export interface SingleProduct {
+  content: string
+  id: string
+  link: string
+  title: string
+  photo: Photo
+  slug: string
+  shortDescription: string
+}

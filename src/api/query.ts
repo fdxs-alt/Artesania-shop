@@ -70,3 +70,25 @@ export const HOME_QUERY = `{
       }
     }
 }`
+
+export const PRODUCT_PARAMS = `{
+  allProducts {
+    slug
+  }
+}`
+
+export const PRODUCT_QUERY = `query ProductBySlug($slug: String) {
+  product(filter: {slug: {eq: $slug}}) {
+      content
+      id
+      link
+      title
+      slug
+      shortDescription
+      photos {
+        responsiveImage {
+          src
+        }
+      }
+   }
+}`

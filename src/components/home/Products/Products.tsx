@@ -1,5 +1,5 @@
 import React from 'react'
-import { Product } from 'types/types'
+import { SingleProduct } from 'types/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import {
@@ -12,7 +12,7 @@ import {
 } from './Product.styles'
 
 interface Props {
-  allProducts: Product[]
+  allProducts: SingleProduct[]
 }
 
 const Products: React.FC<Props> = ({ allProducts }) => {
@@ -21,22 +21,23 @@ const Products: React.FC<Props> = ({ allProducts }) => {
       <h2>Sprawdź własnoręcznie wytworzone przez nas produkty</h2>
       <ProductsWrapper>
         {allProducts.map((el) => (
-          <ProductContainer key={el.id}>
-            <Image
-              width={300}
-              height={200}
-              src={el.photos[0].responsiveImage.src}
-              objectFit="cover"
-              loading="lazy"
-            />
-            <ContentContainer>
-              <h5>{el.title}</h5>
-              <ShortDescription> {el.shortDescription}</ShortDescription>
-              <Link href={`products/${el.slug}`}>
+          <Link href={`products/${el.slug}`} key={el.id} passHref={true}>
+            <ProductContainer key={el.id}>
+              <Image
+                width={300}
+                height={200}
+                src={el.photo.responsiveImage.src}
+                objectFit="cover"
+                loading="lazy"
+              />
+              <ContentContainer>
+                <h5>{el.title}</h5>
+                <ShortDescription> {el.shortDescription}</ShortDescription>
+
                 <SeeMoreLink>Zobacz więcej</SeeMoreLink>
-              </Link>
-            </ContentContainer>
-          </ProductContainer>
+              </ContentContainer>
+            </ProductContainer>
+          </Link>
         ))}
       </ProductsWrapper>
     </Wrapper>

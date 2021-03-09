@@ -57,6 +57,7 @@ export const ProductContainer = styled.div`
   max-width: 300px;
   margin: 20px;
   height: 375px;
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: ${(props) => props.theme.colors.white};
