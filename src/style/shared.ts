@@ -25,5 +25,8 @@ export const Button = styled.button<IButton>`
   &:hover {
     transform: scale(1.03);
   }
+  &:disabled {
+    pointer-events: none;
+  }
   font-family: 'Raleway', sans-serif;
 `

@@ -82,3 +82,18 @@ export const FormGroup = styled.div`
     resize: none;
   }
 `
+
+export const Success = styled.p`
+  color: ${(props) => props.theme.colors.lightGreen};
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+`
+export const ErrorMessage = styled.p`
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+`

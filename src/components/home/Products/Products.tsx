@@ -33,7 +33,6 @@ const Products: React.FC<Props> = ({ allProducts }) => {
               <ContentContainer>
                 <h5>{el.title}</h5>
                 <ShortDescription> {el.shortDescription}</ShortDescription>
-
                 <SeeMoreLink>Zobacz więcej</SeeMoreLink>
               </ContentContainer>
             </ProductContainer>

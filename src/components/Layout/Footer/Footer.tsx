@@ -36,7 +36,7 @@ export default Footer
 
 const adress = [
   {
-    link: 'mailto:artesania96@wp.pl',
+    link: 'mailto:admin@sklep-artesania.pl',
     iconPath: '/email.svg',
     isMail: true,
     text: 'Email',

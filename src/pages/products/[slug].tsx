@@ -1,5 +1,5 @@
 import { request } from '@api'
-import { Layout } from '@components'
+import { Contact, Layout } from '@components'
 import { PRODUCT_PARAMS, PRODUCT_QUERY } from 'api/query'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import React from 'react'
@@ -12,9 +12,10 @@ const SingleProduct: React.FC<Props> = ({ product }) => {
   return (
     <Layout
       title={`Artesania | ${product.title}`}
-      url={`products/${product.slug}`}
+      url={`/products/${product.slug}`}
     >
       {JSON.stringify(product)}
+      <Contact />
     </Layout>
   )
 }
