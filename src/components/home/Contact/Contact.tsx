@@ -77,6 +77,9 @@ const Contact: React.FC<Props> = ({ title, text }) => {
         await response.json()
         setContactState({
           success: 'Email wysłany pomyślnie, czekaj na odpowiedź',
+          email: '',
+          name: '',
+          message: '',
         })
       } else {
         setContactState({ error: 'Wystąpił błąd podczas wysyłania wiadomości' })
