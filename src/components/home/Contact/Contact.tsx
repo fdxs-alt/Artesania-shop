@@ -20,8 +20,12 @@ function validateName(name: string) {
 
   return re.test(name)
 }
+interface Props {
+  title: string
+  text: string
+}
 
-const Contact = () => {
+const Contact: React.FC<Props> = ({ title, text }) => {
   const [contactState, setContactState] = useReducer(
     (state, newState) => ({ ...state, ...newState }),
     {
@@ -89,7 +93,7 @@ const Contact = () => {
 
   return (
     <Wrapper id="contact">
-      <Title>Napisz do nas</Title>
+      <Title>{title}</Title>
       <Text>{text}</Text>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
@@ -139,6 +143,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-const text =
-  'Uzyskasz odpowiedzi na nurtujące Cię pytania nie tylko odnośnie naszej oferty, ale też zdrowego stylu życia – jak przy niewielkiej zmianie nawyków można poprawić jakość swojego życia.'

@@ -1,5 +1,12 @@
 import { GraphQLClient } from 'graphql-request'
-import { HOME_QUERY, PATHS_QUERY, POST_QUERY, BLOG_QUERY } from './query'
+import {
+  HOME_QUERY,
+  PATHS_QUERY,
+  POST_QUERY,
+  BLOG_QUERY,
+  PRODUCT_PARAMS,
+  PRODUCT_QUERY,
+} from './query'
 const endpoint = `https://graphql.datocms.com/`
 
 declare type Variables = {
@@ -23,4 +30,12 @@ const request = <T>({
   return client.request(query, variables)
 }
 
-export { request, HOME_QUERY, PATHS_QUERY, POST_QUERY, BLOG_QUERY }
+export {
+  request,
+  HOME_QUERY,
+  PATHS_QUERY,
+  POST_QUERY,
+  BLOG_QUERY,
+  PRODUCT_PARAMS,
+  PRODUCT_QUERY,
+}

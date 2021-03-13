@@ -25,10 +25,13 @@ const Home: React.FC<Props> = ({ allArticles, allProducts }): JSX.Element => {
       <Introduction />
       <Products allProducts={allProducts} />
       <Blog allArticles={allArticles} />
-      <Contact />
+      <Contact title="Napisz do nas!" text={text} />
     </Layout>
   )
 }
+
+const text =
+  'Uzyskasz odpowiedzi na nurtujące Cię pytania nie tylko odnośnie naszej oferty, ale też zdrowego stylu życia – jak przy niewielkiej zmianie nawyków można poprawić jakość swojego życia.'
 
 export default Home
 
