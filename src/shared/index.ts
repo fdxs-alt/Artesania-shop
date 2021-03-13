@@ -1,3 +1,3 @@
 import { useScrollHeight } from './useScrollHeight'
-
-export { useScrollHeight }
+import { useInView } from './useInView'
+export { useScrollHeight, useInView }
