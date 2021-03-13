@@ -7,6 +7,7 @@ import Introduction from './home/Introduction/Introduction'
 import Products from './home/Products/Products'
 import Markdown from './Markdown'
 import ProductSlider from './Product/PhotosSlider/PhotosSlider'
+import Description from './Product/Description/Description'
 export {
   Layout,
   AboutProducts,
@@ -17,4 +18,5 @@ export {
   Products,
   Markdown,
   ProductSlider,
+  Description,
 }
